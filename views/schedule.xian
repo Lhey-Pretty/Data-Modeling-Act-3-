@@ -9,7 +9,7 @@
         <table class="table-auto border-separate" style="margin:auto;">
             <thead>
                 <tr>
-                    <th>Section</th>
+                    <th>Subject</th>
                     <th>Teacher</th>
                     <th>Day</th>
                     <th>StartTime</th>
@@ -21,7 +21,7 @@
             <tbody>
                 {{#each data}}
                 <tr>
-                    <td>{{Section}}</td>
+                    <td>{{Subject}}</td>
                     <td>{{Teacher}}</td>
                     <td>{{Day}}</td>
                     <td>{{StartTime}}</td>
@@ -40,4 +40,3 @@
 </body>
 
 {{> footer}}
-```
