@@ -1,0 +1,43 @@
+{{> head}}
+
+<body class="bg-gray-50">
+    <div class="text-center mt-20">
+        <h2 class="text-2xl">CRUD OPERATION</h2>
+
+        <a href="/schedules/add">Add New</a>
+
+        <table class="table-auto border-separate" style="margin:auto;">
+            <thead>
+                <tr>
+                    <th>Section</th>
+                    <th>Teacher</th>
+                    <th>Day</th>
+                    <th>StartTime</th>
+                    <th>EndTime</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each data}}
+                <tr>
+                    <td>{{Section}}</td>
+                    <td>{{Teacher}}</td>
+                    <td>{{Day}}</td>
+                    <td>{{StartTime}}</td>
+                    <td>{{EndTime}}</td>
+                    <td>
+                        <a href="/schedules/{{id}}/edit">Edit</a> |
+                        <form method="POST" action="/schedules/{{id}}/delete" style="display:inline">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+{{> footer}}
+```

@@ -1,0 +1,9 @@
+<form method="POST" action="/schedule">
+    <input type="text" name="Subject" placeholder="Section" required>
+    <input type="text" name="Teacher" placeholder="Teacher" required>
+    <input type="text" name="Day" placeholder="Day" required>
+    <input type="text" name="StartTime" placeholder="Start Time" required>
+    <input type="text" name="EndTime" placeholder="End Time" required>
+
+    <button type="submit">Submit</button>
+</form>

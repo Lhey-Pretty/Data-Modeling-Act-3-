@@ -1,0 +1,58 @@
+
+<div class="text-center">
+    {{> head}}
+</div>
+
+<body class="bg-gray-50">
+    <div class="text-center mt-20">
+        <h2 class="text-2xl">EDIT SCHEDULE</h2>
+
+        <form method="POST" action="/schedules/{{data.id}}/update">
+            <input
+                type="text"
+                name="Subject"
+                placeholder="Subject"
+                value="{{data.Subject}}"
+                required
+            >
+
+            <input
+                type="text"
+                name="Teacher"
+                placeholder="Teacher"
+                value="{{data.Teacher}}"
+                required
+            >
+
+            <input
+                type="text"
+                name="Day"
+                placeholder="Day"
+                value="{{data.Day}}"
+                required
+            >
+
+            <input
+                type="text"
+                name="StartTime"
+                placeholder="Start Time"
+                value="{{data.StartTime}}"
+                required
+            >
+
+            <input
+                type="text"
+                name="EndTime"
+                placeholder="End Time"
+                value="{{data.EndTime}}"
+                required
+            >
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+
+<div class="text-center">
+    {{> footer}}
+</div>
